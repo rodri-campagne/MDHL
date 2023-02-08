@@ -10,9 +10,111 @@
     </head>
     <body>
         <main>
-            <form action="/assets/show_data.html">
+            <h2>Registration Form</h2>
+            <form action="/assets/show_data.html" method="get">
+                <fieldset>
+                    <label for="first-name">Player's First Name:</label>
+                    <input type="text" id="first-name" name="first-name">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name">
 
+                    <label for="address">Street Address:</label>
+                    <input type="text" id="address" name="address">
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                    <label for="zip-code">Zip Code:</label>
+                    <input type="number" id="zip-code" name="zip-code">
+
+                    <label for="birthdate">Birth Date(mm/dd/yyyy):</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </fieldset>    
+                <fieldset> 
+                    <legend>Gender:</legend>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="male">Male:</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                </fieldset>
+                <fieldset>   
+                    <legend>Grade:</legend>
+                    <label for="pre-school">Pre-School</label>
+                    <input type="radio" name="grade" id="pre-school" value="pre-school">
+                    <label for="first">1st</label>
+                    <input type="radio" name="grade" id="first" value="first">
+                    <label for="second">2nd</label>
+                    <input type="radio" name="grade" id="second" value="second">
+                    <label for="third">3rd</label>
+                    <input type="radio" name="grade" id="third" value="third">
+                    <label for="fourth">4th</label>
+                    <input type="radio" name="grade" id="fourth" value="fourth">
+                    <label for="fifth">5th</label>
+                    <input type="radio" name="grade" id="fifth" value="fifth">
+                </fieldset>
             </form>
+
+            <h2>Which elementary school do you live near?</h2>
+            <form action="/assets/show_data.html" method="get">
+                <fieldset>
+                    <legend>Closest School</legend>
+                    <input type="radio" name="school" id="aj" value="aj">
+                    <label for="aj">AJ Katzenmaier</label>
+                    <input type="radio" name="school" id="greenbay" value="greenbay">
+                    <label for="greenbay">Greenbay</label>
+                    <input type="radio" name="school" id="howard" value="howard">
+                    <label for="howard">Howard A Yeager</label>
+                    <input type="radio" name="school" id="marjorie" value="marjorie">
+                    <label for="marjorie">Marjorie P Hart</label>
+                    <input type="radio" name="school" id="north" value="north">
+                    <label for="north">North Elementary</label>
+                    <input type="radio" name="school" id="south" value="south">
+                    <label for="south">South Elementary</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What position(s) do you normally play? (check all that apply)</legend>
+                    <input type="checkbox" name="position1" id="position1" value="forward">
+                    <label for="position1">Forward</label>
+                    <input type="checkbox" name="position2" id="position2" value="midfield">
+                    <label for="position2">Midfield</label>
+                    <input type="checkbox" name="position3" id="position3" value="defense">
+                    <label for="position3">Defense</label>
+                    <input type="checkbox" name="position4" id="position4" value="goalkeeper">
+                    <label for="position4">Goaldkeeper</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Uniform Size</legend>
+                    <input type="radio" name="size" id="youth-small" value="youth-small">
+                    <label for="youth-small">Youth Small</label>
+                    <input type="radio" name="size" id="youth-medium" value="youth-medium">
+                    <label for="youth-medium">Youth Medium</label>
+                    <input type="radio" name="size" id="youth-large" value="youth-large">
+                    <label for="youth-large">Youth Large</label>
+
+                    <input type="radio" name="size" id="small" value="small">
+                    <label for="small">Small</label>
+                    <input type="radio" name="size" id="medium" value="medium">
+                    <label for="medium">Medium</label>
+                    <input type="radio" name="size" id="large" value="large">
+                    <label for="large">Large</label>
+                    <input type="radio" name="size" id="xl" value="xl">
+                    <label for="xl">Extra-Large</label>
+                </fieldset>
+            </form>
+
+            <section>
+                <h3>Permission to Play</h3>
+                <p>I, the parent or guardian of the minor registrant, agree that the registrant and i will abide by all the rules of the Mighty Ducks Hockey League (MDHL).
+                    In recognizing the possibility of the physical injury associated with hockey and in consideration for the "League" accepting the registran for its hockey
+                    programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the
+                    facilities used for practices and games, against any claim by or on behalf if the registrant as a result of the registrant's participation in the programand/orbeing
+                    transported to or from MDHL sponsored activities, which transportation. <br>
+                    By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.
+                </p>
+                <p>Parent/Guardian Signature:</p>
+                <p>Date:</p>
+            </section>
         </main>
     </body>
 </html>
